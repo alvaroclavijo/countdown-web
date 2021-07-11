@@ -1,0 +1,356 @@
+@font-face{
+    font-family: "RedHatText";
+    src:url("../fonts/RedHatText-Bold.ttf") format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.background-1{
+    height: 500px;
+    width: 100%;
+    
+}
+
+.background-2{
+    height: 250px;
+    width: 100%;
+}
+
+
+.countdown-web{
+    height: 100%;
+    width: 100%;
+    background-color: #1F1D2A;
+    background-size: 50%;
+}
+.web-container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 750px;
+}
+
+#principal-title{
+    font-family: "RedHatText";
+    font-size: 23px;
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    letter-spacing: 4.6px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.time{
+    width: 100%;
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.day, .hour, .minute, .second{
+    display: flex;
+    justify-content: center;
+    font-family: "RedHatText";
+    font-size: 80px;
+    color:hsl(345, 95%, 68%) ;
+    width: 120px;
+    height: 140px;
+    z-index: 12;
+    line-height: 120px;
+    
+    
+}
+
+.darker{
+    width: 120px;
+    height: 60px;
+    position: absolute;
+    background-color: hsl(237, 18%, 21%);
+    top: 0px;
+    border-bottom:2px solid hsla(233, 15%, 12%, 0.582);
+    z-index: 10;
+    
+    border-radius: 15px 15px 0px 0px;
+}
+
+.lighter{
+    width: 120px;
+    height: 60px;
+    position: absolute;
+    background-color: hsl(236, 21%, 26%);
+    border-top:2px solid hsla(233, 15%, 12%, 0.582);
+    top: 60px;
+    border-radius:0px 0px 15px 15px;
+    z-index: 11;
+
+}
+.black{
+    width: 120px;
+    height: 60px;
+    position: absolute;
+    background-color: black;
+    border-top:2px solid hsla(233, 15%, 12%, 0.582);
+    top: 75px;
+    z-index: 11;
+    border: 1px;
+    border-radius:0px 0px 15px 15px;
+
+}
+.circle1{
+    width: 6px;
+    height: 12px;
+    position: absolute;
+    background-color: black;
+    border-top:2px solid hsla(233, 15%, 12%, 0.582);
+    left: 0px;
+    top: 57px;
+    z-index: 15;
+    border: 1px;
+    border-radius:0px 50% 50% 0px;
+
+}
+.circle2{
+    width: 6px;
+    height: 12px;
+    position: absolute;
+    background-color: black;
+    border-top:2px solid hsla(233, 15%, 12%, 0.582);
+    right: 0px;
+    top: 57px;
+    z-index: 15;
+    border: 1px;
+    border-radius:50% 0% 0% 50%;
+
+}
+
+.day-box, .hour-box, .minute-box, .second-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color:hsl(0, 0%, 100%);
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    
+}
+
+.social-icons{
+    text-align: center;
+    margin-top: 190px;
+}
+
+.social-icons svg{
+    margin-left: 30px;
+}
+
+.developer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+       
+}
+
+.subtitle{
+    margin-top: 20px;
+}
+
+.developer a,h4{
+    font-family: "RedHatText";
+    font-size: 12px;
+    color:hsl(0, 0%, 100%) ;
+    letter-spacing: 2px;
+  
+
+}
+
+.developer h4{   
+    margin-left: 20px;
+}
+.social-icons svg:hover path{
+    fill:hsl(345, 95%, 68%) ;
+    cursor: pointer;
+}
+
+@media (max-width:376px){
+    .background-1{
+        height: 500px;
+        width: 100%;        
+    }
+    
+    .background-2{
+        height: 160px;
+        width: 180%;
+    }
+    
+    
+    .countdown-web{
+        height: auto;
+        width: 100%;
+        background-color: #1F1D2A;
+        background-size: 50%;
+    }
+    .web-container{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 300px;
+    }
+    
+    #principal-title{
+        font-family: "RedHatText";
+        font-size: 18px;
+        color: hsl(0, 0%, 100%);
+        text-transform: uppercase;
+        letter-spacing: 4.6px;
+        margin-top: 120px;
+        padding: 27px;
+        text-align: center;
+    }
+    
+    .time{
+        width: 100%;
+        display: flex;
+        flex-direction: row;    
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        flex-wrap: wrap;
+    }
+    
+    .day, .hour, .minute, .second{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "RedHatText";
+        font-size: 30px;
+        color:hsl(345, 95%, 68%) ;
+        width: 65px;
+        height: 75px;
+        z-index: 12;
+        line-height: 40px;
+
+    }
+    .darker{
+        width: 65px;
+        height: 32.5px;
+        position: absolute;
+        background-color: hsl(237, 18%, 21%);
+        top: 0px;
+        border-bottom:2px solid hsla(233, 15%, 12%, 0.582);
+        z-index: 10;        
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    .lighter{
+        width: 65px;
+        height: 32.5px;
+        position: absolute;
+        background-color: hsl(236, 21%, 26%);
+        border-top:2px solid hsla(233, 15%, 12%, 0.582);
+        top: 32.5px;
+        border-radius:0px 0px 10px 10px;
+        z-index: 11;
+    
+    }
+    .black{
+        width: 65px;
+        height: 32.5px;
+        position: absolute;
+        background-color: black;
+        border-top:2px solid hsla(233, 15%, 12%, 0.582);
+        top: 42.5px;
+        z-index: 11;
+        border: 1px;
+        border-radius:0px 0px 15px 15px;
+    
+    }
+    .circle1{
+        width: 4px;
+        height: 8px;
+        position: absolute;
+        background-color: black;
+        border-top:2px solid hsla(233, 15%, 12%, 0.582);
+        left: 0px;
+        top: 30px;
+        z-index: 15;
+        border: 1px;
+        border-radius:0px 50% 50% 0px;
+    
+    }
+    .circle2{
+        width: 4px;
+        height: 8px;
+        position: absolute;
+        background-color: black;
+        border-top:2px solid hsla(233, 15%, 12%, 0.582);
+        right: 0px;
+        top: 30px;
+        z-index: 15;
+        border: 1px;
+        border-radius:50% 0% 0% 50%;
+    
+    }
+    
+    .day-box, .hour-box, .minute-box, .second-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 8px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color:hsl(0, 0%, 100%);
+        margin-left: 5px;
+        margin-right: 5px;
+        position: relative;
+    }
+    .social-icons{
+        text-align: center;
+        margin-top: 225px;
+    }
+    .social-icons svg{
+        margin-left: 30px;
+    }
+    .developer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 24px;
+           
+    }
+    .subtitle{
+        margin-top: 15px;
+        font-size: 7px;
+    }
+    
+    .developer a,h4{
+        font-family: "RedHatText";
+        font-size: 7px;
+        color:hsl(0, 0%, 100%) ;
+        letter-spacing: 2px;
+      
+    
+    }
+    
+    .developer h4{       
+        margin-left: 20px;
+    }
+}
+
+
+
+
+
