@@ -3,7 +3,7 @@ const MILLISECONDS_DAY = 86400000;
 const MILLISECONDS_HOUR = 3666666;
 const MILLISECONDS_MINUTE = 60000;
 const MILLISECONDS_SECOND = 1000;
-const DAY2 = new Date("07/30/2021");
+const DAY2 = new Date("11/01/2021");
 
 
 function update() {
