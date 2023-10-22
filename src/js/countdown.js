@@ -3,11 +3,13 @@ const MILLISECONDS_DAY = 86400000;
 const MILLISECONDS_HOUR = 3666666;
 const MILLISECONDS_MINUTE = 60000;
 const MILLISECONDS_SECOND = 1000;
-const DAY2 = new Date("11/15/2021");
-
+let tomorrow = new Date();
+tomorrow.setDate(tomorrow.getDate() + 1);
+const tomorrowStr = `${tomorrow.getMonth() + 1}/${tomorrow.getDate()}/${tomorrow.getFullYear()}`;
+const DAY2 = new Date(prompt("Please enter a date to calculate the countdown (2023-10-22T20:24:00 )", tomorrowStr));
 
 function update() {
-    var day1 = new Date(); 
+    var day1 = new Date();
     var difference = DAY2 - day1;
     var days = Math.floor(difference / MILLISECONDS_DAY);
     var restDay = difference % MILLISECONDS_DAY;
@@ -23,5 +25,5 @@ function update() {
     document.getElementById("second").innerHTML = seconds;
 }
 
-setInterval("update()", 1000);
+setInterval(update, 1000);
 
